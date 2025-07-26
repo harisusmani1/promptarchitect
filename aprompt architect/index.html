@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prompt Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .scrollbar-thin::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      .scrollbar-thin::-webkit-scrollbar-track {
+        background: #2d3748; /* slate-800 */
+      }
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+        background-color: #4a5568; /* slate-600 */
+        border-radius: 3px;
+      }
+      /* Styles for rendered markdown */
+      .prose-dark h1, .prose-dark h2, .prose-dark h3, .prose-dark h4, .prose-dark h5, .prose-dark h6 {
+          color: #f1f5f9; /* slate-100 */
+          margin-top: 1em;
+          margin-bottom: 0.5em;
+      }
+      .prose-dark p { margin-bottom: 1em; line-height: 1.6; }
+      .prose-dark ul, .prose-dark ol { margin-left: 1.5em; margin-bottom: 1em; }
+      .prose-dark li { margin-bottom: 0.25em; }
+      .prose-dark ul { list-style-type: disc; }
+      .prose-dark ol { list-style-type: decimal; }
+      .prose-dark a { color: #a78bfa; /* purple-400 */ text-decoration: underline; }
+      .prose-dark a:hover { color: #c4b5fd; /* purple-300 */ }
+      .prose-dark strong { color: #f1f5f9; /* slate-100 */ }
+      .prose-dark code { background-color: #1e293b; /* slate-800 */ color: #f472b6; /* pink-400 */ padding: 0.2em 0.4em; border-radius: 4px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace; }
+      .prose-dark pre { background-color: #0f172a; /* slate-900 */ border: 1px solid #334155; /* slate-700 */ padding: 1em; border-radius: 8px; overflow-x: auto; }
+      .prose-dark pre code { background-color: transparent; padding: 0; }
+      .prose-dark blockquote { border-left: 4px solid #4a5568; /* slate-600 */ padding-left: 1em; color: #94a3b8; /* slate-400 */ margin-left: 0; margin-bottom: 1em; }
+      .prose-dark table { width: 100%; border-collapse: collapse; margin-bottom: 1em; }
+      .prose-dark th, .prose-dark td { border: 1px solid #4a5568; /* slate-600 */ padding: 0.5em 1em; text-align: left; }
+      .prose-dark th { background-color: #334155; /* slate-700 */ color: #e2e8f0; /* slate-200 */ }
+      .prose-dark tr:nth-child(even) { background-color: #1e293b; /* slate-800 */ }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^1.9.0",
+    "showdown": "https://esm.sh/showdown@^2.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-900 text-slate-200">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

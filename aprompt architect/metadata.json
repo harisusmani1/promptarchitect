@@ -1,0 +1,6 @@
+{
+  "name": "Prompt Architect",
+  "description": "A guided tool for constructing complex, structured prompts for Large Language Models (LLMs) using the 5 C's framework: Core Identity, Context, Constraints, Canon, and Command. This platform helps professionals create high-quality prompts by breaking down the process into logical steps.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
